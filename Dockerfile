@@ -10,4 +10,5 @@ RUN set -x \
        && sudo apt-get remove git \
        && unzip -o /usr/local/tomcat/macky/com.cloudrui.app/dist/qx-console.war -d /usr/local/tomcat/webapps/ROOT/ \
        && rm -rf /usr/local/tomcat/macky
+       
 CMD ["catalina.sh", "run"]
