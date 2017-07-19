@@ -5,7 +5,7 @@ RUN set -x \
        && rm -rf /usr/local/tomcat/webapps/ROOT/* \
        && mkdir /usr/local/tomcat/macky \
        && apt-get update && apt-get install -y --no-install-recommends git \
-       && git clone -b building-weixin https://liuyun105@126.com:doctormacky1@git.oschina.net/hannah/com.cloudrui.app.git "/usr/local/tomcat/macky" \
+       && git clone -b building-weixin https://doctormacky:doctormacky1@git.oschina.net/hannah/com.cloudrui.app.git "/usr/local/tomcat/macky" \
        && unzip -o /usr/local/tomcat/macky/com.cloudrui.app/dist/qx-console.war -d /usr/local/tomcat/webapps/ROOT/ \
        && rm -rf /usr/local/tomcat/macky
        
