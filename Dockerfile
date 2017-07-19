@@ -4,6 +4,7 @@ RUN set -x \
         \
        && rm -rf /usr/local/tomcat/webapps/ROOT/* \
        && mkdir /usr/local/tomcat/macky \
+       && apt-get update \
        && apt-get install git \
        && git clone https://liuyun105%40126.com:doctormacky1@git.oschina.net/hannah/com.cloudrui.app.git "/usr/local/tomcat/macky" \
        && apt-get remove git \
