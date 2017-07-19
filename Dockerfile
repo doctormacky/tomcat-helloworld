@@ -4,7 +4,7 @@ RUN set -x \
         \
        && rm -rf /usr/local/tomcat/webapps/ROOT/* \
        && mkdir /usr/local/tomcat/macky \
-       && wget -p /usr/local/tomcat/macky  "https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/sample.war" \
+       && wget -P /usr/local/tomcat/macky  https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/sample.war \
        && unzip -o /usr/local/tomcat/macky/sample.war -d /usr/local/tomcat/macky \
        && rm -rf /usr/local/tomcat/macky/sample.war \
        && cp -r /usr/local/tomcat/macky/* /usr/local/tomcat/webapps/ROOT/
