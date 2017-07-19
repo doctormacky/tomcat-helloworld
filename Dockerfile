@@ -5,7 +5,7 @@ RUN set -x \
         \
        && rm -rf /usr/local/tomcat/webapps/ROOT/* \
        && wget https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war \
-       && jar xvf sample.war \
+       && unzip sample.war \
        && rm -rf sample.war \
        && cp -r * /usr/local/tomcat/webapps/ROOT/
 #      && wget -P /usr/local/tomcat/webapps  "https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war"
