@@ -4,7 +4,7 @@ RUN set -x \
         \
        && rm -rf /usr/local/tomcat/webapps/ROOT/* \
        && mkdir /usr/local/tomcat/macky \
-       && wget -P /usr/local/tomact/macky http://7xox9v.com1.z0.glb.clouddn.com/qx-console.war \ 
+       && wget -P /usr/local/tomcat/macky http://7xox9v.com1.z0.glb.clouddn.com/qx-console.war \ 
        && unzip -o /usr/local/tomcat/macky/qx-console.war -d /usr/local/tomcat/webapps/ROOT/ \
        && rm -rf /usr/local/tomcat/macky
        
