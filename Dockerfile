@@ -4,9 +4,8 @@ RUN set -x \
         \
        && rm -rf /usr/local/tomcat/webapps/ROOT/* \
        && mkdir /usr/local/tomcat/macky \
-       && apt-get update && apt-get install -y --no-install-recommends git \
-       && git clone -b building-weixin https://doctormacky:doctormacky1@git.oschina.net/hannah/com.cloudrui.app.git "/usr/local/tomcat/macky" \
-       && unzip -o /usr/local/tomcat/macky/com.cloudrui.app/dist/qx-console.war -d /usr/local/tomcat/webapps/ROOT/ \
+       && wget -P /usr/local/tomact/macky http://7xox9v.com1.z0.glb.clouddn.com/qx-console.war \ 
+       && unzip -o /usr/local/tomcat/macky/qx-console.war -d /usr/local/tomcat/webapps/ROOT/ \
        && rm -rf /usr/local/tomcat/macky
        
 CMD ["catalina.sh", "run"]
